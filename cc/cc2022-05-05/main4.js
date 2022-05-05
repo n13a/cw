@@ -14,9 +14,8 @@
 function fizzbuzz(n)
 {
   let s = []
-  var threeAndFive = (i % 5 == 0 && i % 3 ==0)
   for(let i = 1; i <= n; i++){
-    if (threeAndFive) {
+    if (i % 5 == 0 && i % 3 ==0) {
       s.push('FizzBuzz')
     } else if (i % 5 == 0){
       s.push('Buzz')
