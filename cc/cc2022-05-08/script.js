@@ -10,6 +10,7 @@
 // Example
 // predictAge(65, 60, 75, 55, 60, 63, 64, 45) === 86
 // Note: the result should be rounded down to the nearest integer.
+ 
 
 // Some random tests might fail due to a bug in the JavaScript implementation. Simply resubmit if that happens to you.
 
@@ -18,4 +19,6 @@
 const predictAge = (age1,age2,age3,age4,age5,age6,age7,age8)=>{
     let s = [age1,age2,age3,age4,age5,age6,age7,age8].map(e=> e * e).reduce((a,b)=> a + b, 0)
     return Math.floor((Math.sqrt(s)) / 2)
+
+
   }
