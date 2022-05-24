@@ -11,7 +11,5 @@
 // sum(someNumbers); // should return 55
 
 
-function sum(array) {
-    return array.reduce((a,c)=> a + c, 0)
-  }
+const sum = a=> a.reduce((a,c)=> a + c, 0)
   
