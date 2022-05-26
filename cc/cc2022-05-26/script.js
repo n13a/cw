@@ -19,4 +19,4 @@ function doTurn() {
     getCoins()
     buyHealth()
     printStatus()
-  }
+}
