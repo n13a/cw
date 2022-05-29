@@ -10,4 +10,4 @@
 // [1, 2, 3, -4]  //  returns 7 because 3 - (-4) == 7
 // Have fun!
 
-const maxDiff = l => l.length > 1 ? l.sort((a,b)=> a-b)[l.length - 1] - l[0] : 0
+const maxDiff = l => l.length ? l.sort((a,b)=> a-b)[l.length - 1] - l[0] : 0
