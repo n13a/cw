@@ -20,5 +20,5 @@
 
 const findDigit = (num, nth)=>{
     let n = (Math.abs(num).toString());
-    return nth <= 0 ? -1 : n.slice(n.length-nth,n.length-nth + 1) * 1;
+    return nth <= 0 ? -1 : n.slice(n.length - nth, n.length - nth + 1) * 1;
 }
