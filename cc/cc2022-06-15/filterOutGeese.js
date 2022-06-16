@@ -18,4 +18,4 @@
 const gooseFilter = b=> {
     var g = ["African", "Roman Tufted", "Toulouse", "Pilgrim", "Steinbacher"];
     return b.filter(x=> !g.includes(x));
-  };
+};
