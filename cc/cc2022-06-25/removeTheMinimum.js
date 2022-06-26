@@ -15,4 +15,4 @@
 // * Input: [5,3,2,1,4], output = [5,3,2,4]
 // * Input: [2,2,1,2,1], output = [2,2,2,1]
 
-const removeSmallest = n=> [].concat(n.filter((x,i)=> i != n.indexOf(Math.min(...n))))
+const removeSmallest = n=> [].concat(n.filter((_,i)=> i != n.indexOf(Math.min(...n))))
