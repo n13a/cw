@@ -23,8 +23,8 @@
 
 const sortMyString = s => {
     //     const x = s.split('')
-    //     const a = x.filter((x,i)=> i % 2 == 0)
-    //     const b = x.filter((x,i)=> i % 2 != 0)
+    //     const a = x.filter((_,i)=> i % 2 == 0)
+    //     const b = x.filter((_,i)=> i % 2 != 0)
     //     return [...a,' ',...b].join('')
     
       const a = []
