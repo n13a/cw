@@ -36,3 +36,11 @@ All the test strings would contain valid Morse code, so you may skip checking fo
 
 
 */
+
+
+const decodeMorse = morseCode=> 
+    morseCode.split('  ')
+    .join(' ').split(' ')
+    .map(x=> x== '' ? ' ' : MORSE_CODE[x] )
+    .join('').trim()
+  
