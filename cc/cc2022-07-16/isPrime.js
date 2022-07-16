@@ -13,17 +13,18 @@
 // is_prime(2)  /* true  */
 // is_prime(-1) /* false */
 
-
 const isPrime = num => {
-    var f = true
-    if(num == 0 || num == 1 || num < 0){
+    if(num < 2){
       return false
+    } else if(num == 2) {
+      return true
     }
-    for (let i = 2; i < num; i++) {
-          if (num % i == 0) {
-              f = false;
+      let flag = true
+    for (let i = 2; i <= Math.ceil(Math.sqrt(num)); i++) {
+      if (num % i == 0) {
+              flag = false;
               break;
           }
       }
-     return f
-  }
+     return flag
+    }
