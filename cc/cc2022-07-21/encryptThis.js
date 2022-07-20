@@ -15,7 +15,6 @@
 // encryptThis("good") === "103doo"
 // encryptThis("hello world") === "104olle 119drlo"
 
-
 const encryptThis = text => text.split(' ').map(x=> x.length == 1 ?
     x.charCodeAt() : x.length == 2 ? 
    `${x.charCodeAt(0)}${x.slice(1)}` : 
