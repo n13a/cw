@@ -13,7 +13,7 @@ const modifiedSum = (a, n)=> a.map(x=> Math.pow(x, n)).reduce((a,c)=> a+ +c) - a
 
 
 
-// Time: 864ms Passed: 4Failed: 0
+// Time: 864ms Passed: 4 Failed: 0
 // Test Results:
 // Your "modifiedSum" function
 // should work for the examples provided in the Description
