@@ -28,7 +28,7 @@
 // Since the passed number is 5 , Then * the fifth smallest element in this array/list is 92*
 
 
-const nthSmallest = (arr, pos)=> arr.sort((a,b)=> a-b)[pos-1]
+const nthSmallest = (a, p)=> a.sort((a,b)=> a-b)[p-1]
 
 
 
