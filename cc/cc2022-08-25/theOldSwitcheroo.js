@@ -14,7 +14,6 @@
 const vowel2index = str => {
     return [...str].map((x, i)=> {
       const z = x.toLowerCase()
-      return (z == 'a' || z == 'e' || z == 'i' || z == 'o' || z == 'u') ? i+1 : x
-    }).join('')
+      return (z == 'a' || z == 'e' || z == 'i' || z == 'o' || z == 'u') ? i+1 : x }).join('')
  }
  
