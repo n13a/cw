@@ -8,4 +8,4 @@
 // The returned array should be in lowercase.
 
 
-const removeRotten = bof=> !bof ? [] : bof.map((x, i )=> x.replace('rotten', '').toLowerCase())
+const removeRotten = bof=> bof ? bof.map((x, i )=> x.replace('rotten', '').toLowerCase()) : []
