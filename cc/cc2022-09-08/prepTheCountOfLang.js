@@ -30,4 +30,4 @@ const countLanguages = list=> {
       o[i.language]++
       return o
     }, {})
-  }
+}
