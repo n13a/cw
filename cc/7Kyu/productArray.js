@@ -38,4 +38,4 @@
 // Finally ,The Fifth element 900 is the product of all array's elements except the fifth element 2
 
 
-productArray = numbers => numbers.map(x=> numbers.reduce((a,c)=> a * c, 1) / x)
+const productArray = numbers => numbers.map(x=> numbers.reduce((a,c)=> a * c, 1) / x)
