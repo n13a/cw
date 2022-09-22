@@ -18,4 +18,4 @@
 const isPythagoreanTriple = int=> {
     int.sort((a,b)=> a-b)
     return int[2]**2 ==  int[0]**2 + int[1]**2
-  }
+}
