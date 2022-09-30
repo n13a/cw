@@ -15,3 +15,25 @@
 // "Guvf vf zl svefg EBG13 rkprepvfr!"
 
 
+const rot13 = str => str.split('').map(x=> {
+    const char = x.charCodeAt()
+    const newChar = char + 13
+    if(char <= 122 && char >= 97 || char >= 65 && char <= 90){
+      if(char <= 122 && char >= 97){
+        if(newChar > 122){
+          return String.fromCharCode((newChar - 122) + 96)
+        } else {
+          return String.fromCharCode(newChar)
+        }
+      } else {
+        if(newChar > 90){
+          return String.fromCharCode((newChar - 90) + 64)
+        } else {
+          return String.fromCharCode(newChar)
+        }
+      }
+    } else {
+      return x
+    }
+  
+  }).join('')
