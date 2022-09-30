@@ -20,12 +20,10 @@
 
 // Note: In the C and NASM languages you are given the third parameter which is the number of segment blocks.
 
-
 function dataReverse(data) {
     let array = []
-    const c = 8;
-    for (let i = 0; i < data.length; i += c) {
-      const chunk = data.slice(i, i + c)
+    for (let i = 0; i < data.length; i += 8) {
+      const chunk = data.slice(i, i + 8)
       array.push(chunk)
     }
     return [].concat.apply([], array.reverse());
