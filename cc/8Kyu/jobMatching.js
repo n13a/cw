@@ -29,4 +29,3 @@ function match(candidate, job) {
       throw 'Error'
     }
     return candidate.minSalary * 90/100 <= job.maxSalary
-  }
