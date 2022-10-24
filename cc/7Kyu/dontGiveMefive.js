@@ -15,4 +15,4 @@
 
 
 const dontGiveMeFive = (start, end) => [...Array(end-start+1).keys()]
-  .map(x=> x + start).filter(x=> !x.toString().includes(5)).length
+.map(x=> x + start).filter(x=> !x.toString().includes(5)).length

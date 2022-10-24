@@ -22,4 +22,5 @@ const expandedForm = num => {
         n.push(str[i] + '0'.repeat(str.length - i - 1))
     }
     return n.join(' + ')
+
 }

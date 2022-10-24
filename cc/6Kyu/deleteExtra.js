@@ -15,4 +15,5 @@ const deleteNth = (arr, n) => {
 
         return !(obj[x] > n)
     })
+
 }

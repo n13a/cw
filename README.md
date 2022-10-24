@@ -1,6 +1,6 @@
 # CodeWars Challenges
 
-<img src="https://www.codewars.com/users/omninox/badges/large">
+<a href="https://www.codewars.com/users/omninox"> <img src="https://www.codewars.com/users/omninox/badges/large"> </a>
 
 A repository filled with codewars challenges (kata).
 

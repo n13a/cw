@@ -44,4 +44,5 @@ const longestConsec = (s, k)=> {
       }
     }
     return longest
+
   }
