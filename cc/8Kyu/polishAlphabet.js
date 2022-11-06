@@ -33,4 +33,4 @@ const o = {
     ż: 'z'
   }
   
-const correctPolishLetters = string => [...string].map(x=> o[x] ? o[x] : x).join('')
+const correctPolishLetters = string => [...string].map(x=> o[x] || x).join('')
