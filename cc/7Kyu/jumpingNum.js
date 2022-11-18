@@ -1,0 +1,41 @@
+// Jumping Number
+
+// Definition
+
+// Jumping number is the number that All adjacent digits in it differ by 1.
+// Task
+
+// Given a number, Find if it is Jumping or not .
+// Warm-up (Highly recommended)
+// Playing With Numbers Series
+// Notes
+
+//     Number passed is always Positive .
+
+//     Return the result as String .
+
+//     The difference between ‘9’ and ‘0’ is not considered as 1 .
+
+//     All single digit numbers are considered as Jumping numbers.
+
+// Input >> Output Examples
+
+// jumpingNumber(9) ==> return "Jumping!!"
+
+// Explanation:
+
+//     It's single-digit number
+
+// jumpingNumber(79) ==> return "Not!!"
+
+// Explanation:
+
+//     Adjacent digits don't differ by 1
+
+
+const jumpingNumber = n => {
+  const arr = [...n + '']
+  if (arr.length == 1) return "Jumping!!"
+  for (let i = 0; i < arr.length - 1; i++) if (Math.abs(arr[i] - arr[i + 1]) != 1) return 'Not!!'
+  return 'Jumping!!'
+}
