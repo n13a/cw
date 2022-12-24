@@ -58,12 +58,12 @@
 
 //     Note : The last element 2 is greater than the sum of its right elements (abstract zero). 
 
-function arrayLeaders(numbers) {
-    let res = []
-    numbers.forEach((x, i) => {
-        if (x > numbers.slice(i + 1).reduce((a, c) => a + +c, 0)) {
-            res.push(x)
-        }
-    })
-    return res
+const arrayLeaders = num => {
+    num.push(0)
+    let sum = num.reduce((a, c) => a + +c, 0)
+    return num.reduce((a, c) => {
+        sum -= c
+        if (c > sum) a.push(c)
+        return a
+    }, [])
 }
