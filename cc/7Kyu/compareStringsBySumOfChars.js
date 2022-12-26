@@ -1,4 +1,4 @@
-// Compare Strings by Sum of 
+// Compare Strings by Sum of chars
 
 
 // Compare two strings by comparing the sum of their values (ASCII character code).
@@ -22,7 +22,7 @@ const func = ar => [...ar].map(x => x.charCodeAt()).reduce((a, c) => a + c, 0)
 const compare = (s1, s2) => {
     s1 = (s1 || "").toUpperCase()
     s2 = (s2 || "").toUpperCase()
-    let s1Value = !/^[A-Z]+$/.test(s1) ? 0 : func(s1)
-    let s2Value = !/^[A-Z]+$/.test(s2) ? 0 : func(s2)
+    const s1Value = !/^[A-Z]+$/.test(s1) ? 0 : func(s1),
+        s2Value = !/^[A-Z]+$/.test(s2) ? 0 : func(s2)
     return s1Value === s2Value
 }
