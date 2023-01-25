@@ -17,4 +17,4 @@
 
 
 
-const twosDifference = input => input.filter(x => input.indexOf(x + 2) !== -1).map(z => [z, z + 2])
+const twosDifference = input => input.filter(x => input.includes(x + 2)).map(z => [z, z + 2])
