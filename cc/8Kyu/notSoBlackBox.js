@@ -8,7 +8,6 @@
 
 console.log(blackBox.toString())
 // output:
-e
 
 // function (args) {
     //a secret message is hidden within me
