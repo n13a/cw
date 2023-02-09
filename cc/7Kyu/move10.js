@@ -8,9 +8,6 @@
 
 
 const moveTen = s => {
-    let res = ''
-    const a = [...s].map(x => {
-        res += String.fromCharCode((x.charCodeAt() - 97 + 10) % 26 + 97);
-    })
-    return res
+    return [...s].map(x => String.fromCharCode((x.charCodeAt() - 97 + 10) % 26 + 97)
+    ).join('')
 }
