@@ -15,7 +15,7 @@
 
 
 const stringTransformer = str => [...str].reduce((a, c) => {
-    if (c.charCodeAt() >= 65 && c.charCodeAt() <= 90) a.push(c.toLowerCase())
-    else a.push(c.toUpperCase())
+    (c.charCodeAt() >= 65 && c.charCodeAt() <= 90) ? a.push(c.toLowerCase()) : 
+    a.push(c.toUpperCase())
     return a
 }, []).join('').split(' ').reverse().join(' ')
