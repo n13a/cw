@@ -22,7 +22,7 @@ const m = { kata: 5, 'Petes kata': 10, life: 0, eating: 1 }
 function paul(x) {
     const score = x.reduce((a, c) => a + m[c], 0)
     if (score < 40) return 'Super happy!'
-    else if (score < 70 && score >= 40) return 'Happy!'
-    else if ((score < 100) && (score >= 70)) return 'Sad!'
+    else if (score < 70) return 'Happy!'
+    else if (score < 100) return 'Sad!'
     else return 'Miserable!'
 }
