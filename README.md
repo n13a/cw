@@ -2,7 +2,7 @@
 
 <a href="https://www.codewars.com/users/omninox"> <img src="https://www.codewars.com/users/omninox/badges/large"> </a>
 
-A repository filled with codewars challenges (kata). 760+ solved programming challenges.
+A repository filled with codewars challenges (kata). 800+ solved programming challenges.
 
 Solving coding challenges everyday.
 
