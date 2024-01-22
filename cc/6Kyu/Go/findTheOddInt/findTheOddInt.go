@@ -10,15 +10,13 @@ Examples
 [0,1,0,1,0] should return 0, because it occurs 3 times (which is odd).
 [1,2,2,3,3,3,4,3,3,3,2,2,1] should return 4, because it appears 1 time (which is odd). */
 
-package main
+package findTheOddInt
 
 func FindOdd(seq []int) int {
 	m := make(map[int]int, 10)
-
 	for _, v := range seq {
 		m[v]++
 	}
-
 	for key, value := range m {
 		if value%2 == 1 {
 			return key
@@ -26,4 +24,3 @@ func FindOdd(seq []int) int {
 	}
 	return 0
 }
-
