@@ -2,6 +2,7 @@ package main
 
 import (
 	"codewars/cc/convertStringToCamelCase"
+	"codewars/cc/deadAnts"
 	"codewars/cc/errorsHistogram"
 	"codewars/cc/expressionsMatter"
 	"codewars/cc/findTheOddInt"
@@ -18,4 +19,5 @@ func main() {
 	fmt.Println(convertStringToCamelCase.ToCamelCase("The_Stealth-Warrior"))
 	fmt.Println(uniq.Uniq([]string{"a", "a", "b", "b", "c", "a", "b", "c"}))
 	fmt.Println(sumOfPrimeIndexedElements.Solve([]int{1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15}), 47)
+	fmt.Println(deadAnts.DeadAntCount("ant a ant anatttt"), 4)
 }
