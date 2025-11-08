@@ -23,12 +23,12 @@ To help you get started, here is an excerpt from Wikipedia's page on Ordinal Ind
 */
 
 
-const m = { 11: 'th', 12: 'th', 13: 'th', 1: 'st', 2: 'nd', 3: 'rd'}
+const m = { 11: 'th', 12: 'th', 13: 'th', 1: 'st', 2: 'nd', 3: 'rd' }
 function numberToOrdinal(n) {
   const s = n.toString()
   const keys = Object.keys(m).reverse()
-  for(let k of keys){
-    if(s.endsWith(k)) return s + m[k]
+  for (let k of keys) {
+    if (s.endsWith(k)) return s + m[k]
   }
   return n ? s + 'th' : '0'
 }
